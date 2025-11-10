@@ -1,0 +1,16 @@
+{
+  "build": {
+    "android-apk": {
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "production": {
+      "developmentClient": false,
+      "distribution": "store"
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

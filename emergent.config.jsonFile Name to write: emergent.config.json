@@ -1,0 +1,37 @@
+{
+  "name": "Aurora Time",
+  "type": "expo",
+  "version": "1.0.0",
+  "node": "18.x",
+  "build": {
+    "command": "eas build --platform android",
+    "directory": "./"
+  },
+  "start": {
+    "command": "npx expo start --tunnel"
+  },
+  "environment": {
+    "EXPO_TOKEN": "your_expo_token_here",
+    "EAS_PROJECT_ID": "aurora-time",
+    "NODE_OPTIONS": "--max-old-space-size=4096"
+  },
+  "postbuild": {
+    "command": "npx expo publish --non-interactive"
+  },
+  "notifications": {
+    "onSuccess": "Build completed successfully 🎉",
+    "onFailure": "❌ Build failed — check Expo logs"
+  }
+}
+
+CTRL + O   (to save)
+ENTER
+CTRL + X   (to exit)
+
+ls
+
+cd ..
+zip -r aurora-time.zip aurora-time
+
+
+
